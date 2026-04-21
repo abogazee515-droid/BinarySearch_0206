@@ -10,7 +10,7 @@ void input() {
         cout << "Enter number of elements (max 10): ";
         cin >> sizeArr;
 
-        if (sizeArr <= 10) {
+        if (sizeArr <= 10 && sizeArr > 1) {
             break;
         } else {
             cout << "\n[!] Number of elements must not exceed 10. Try again.\n";
