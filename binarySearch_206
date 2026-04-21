@@ -26,3 +26,18 @@ void input() {
         cin >> arr[i];
     }
 }
+
+void bubbleSort() {
+    int pass = 1;
+
+    do {
+        for (int j = 0; j <= sizeArr - 1 - pass; j++) {
+            if (arr[j] > arr[j + 1]) {
+                int temp = arr[j];
+                arr[j] = arr[j + 1];
+                arr[j + 1] = temp;
+            }
+        }
+        pass++;
+    } while (pass <= sizeArr - 1);
+}
