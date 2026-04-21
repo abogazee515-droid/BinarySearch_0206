@@ -41,3 +41,17 @@ void bubbleSort() {
         pass++;
     } while (pass <= sizeArr - 1);
 }
+
+void display() {
+    cout << "\n=====================================\n";
+    cout << " Sorted Array (Ascending Order)\n";
+    cout << "=====================================\n";
+
+    for (int i = 0; i < sizeArr; i++) {
+        cout << arr[i];
+        if (i < sizeArr - 1) {
+            cout << " -> ";
+        }
+    }
+    cout << endl;
+}
