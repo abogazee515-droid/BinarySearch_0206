@@ -86,3 +86,13 @@ void binarySearch() {
             }
 
         } while (low <= high);
+
+        if (low > high) {
+            cout << "\n[x] Element " << target << " not found in array.\n";
+        }
+
+        cout << "Search again? (y/n): ";
+        cin >> repeat;
+
+    } while (repeat == 'y' || repeat == 'Y');
+}
