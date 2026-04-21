@@ -66,3 +66,23 @@ void binarySearch() {
 
         cout << "Enter element to search: ";
         cin >> target;
+        int low = 0;
+        int high = sizeArr - 1;
+
+        do {
+            int mid = (low + high) / 2;
+
+            if (arr[mid] == target) {
+                cout << "\n[✓] Element " << target << " found at index " << mid << endl;
+                return;
+            }
+
+            if (target < arr[mid]) {
+                high = mid - 1;
+            }
+
+            if (target > arr[mid]) {
+                low = mid + 1;
+            }
+
+        } while (low <= high);
