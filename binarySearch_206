@@ -5,3 +5,15 @@ int arr[10];
 int sizeArr;
 int target;
 
+void input() {
+    while (true) {
+        cout << "Enter number of elements (max 10): ";
+        cin >> sizeArr;
+
+        if (sizeArr <= 10) {
+            break;
+        } else {
+            cout << "\n[!] Number of elements must not exceed 10. Try again.\n";
+        }
+    }
+}
