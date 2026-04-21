@@ -55,3 +55,14 @@ void display() {
     }
     cout << endl;
 }
+
+void binarySearch() {
+    char repeat;
+
+    do {
+        cout << "\n=============================\n";
+        cout << "      Binary Search\n";
+        cout << "=============================\n";
+
+        cout << "Enter element to search: ";
+        cin >> target;
